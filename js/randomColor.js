@@ -1,21 +1,18 @@
+const cardSections = document.getElementsByClassName('changeColorClass');
 
-  const cardSection = document.getElementById('change-color');
+// add event listener for mouseover to each card section
+for (let i = 0; i < cardSections.length; i++) {
+  cardSections[i].addEventListener('mouseover', function() {
+    this.style.backgroundColor = randomColor();
+  });
 
- 
+  // add event listener for mouseout to each card section
+  cardSections[i].addEventListener('mouseout', function() {
+    this.style.backgroundColor = '#fff';
+  });
+}
 
-
-// add event listener for mouseover
-cardSection.addEventListener('mouseover', function() {
-  cardSection.style.backgroundColor = randomColor();
-});
-
-// add event listener for mouseout
-cardSection.addEventListener('mouseout', function() {
-  cardSection.style.backgroundColor = '#fff';
-});
-
-
-    // function to generate random color
+// function to generate random color
 function randomColor() {
   const letters = '0123456789ABCDEF';
   let color = '#';
