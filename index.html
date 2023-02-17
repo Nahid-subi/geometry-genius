@@ -5,7 +5,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- daisyUI link here -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
+    <!-- tailwind link here -->
     <script src="https://cdn.tailwindcss.com"></script>
     <title>Geometry Genius</title>
 </head>
@@ -19,17 +21,18 @@
                 <h3 class="font-semibold text-2xl text-slate-500">Geometry Genius</h3>
             </div>
             <div class="flex-none">
-                <button class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-1 px-4 rounded">
+                <button class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-1 px-4 rounded">
                     Blog
                 </button>
             </div>
         </div>
     </header>
+    <!-- main section started -->
     <main>
-        <section>
-            <div>
+        <section class="lg:px-14 space-x-4 flex flex-col md:flex-row lg:flex-row my-10">
+            <div class="products-details mt-5 lg:e-[70%] w-[90%] mx-auto grid md:grid-cols-2 lg:grid-cols-3 gap-6">
                 <!-- 1st card -->
-                <div id="change-color" class="card w-96 changeColorClass bg-base-100 shadow-xl">
+                <div  class="card w-ful changeColorClass bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/triangle.png" class="rounded-xl" />
                     </figure>
@@ -44,12 +47,12 @@
                         </div>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- 2nd card -->
-                <div id="change" class="card w-96 changeColorClass bg-base-100 shadow-xl">
+                <div class="card w-ful changeColorClass bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rectangle.png" class="rounded-xl" />
                     </figure>
@@ -64,12 +67,12 @@
                         </div>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- 3rd card -->
-                <div class="card w-96 changeColorClass bg-base-100 shadow-xl">
+                <div class="card ful changeColorClass bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/parallelogram.png" class="rounded-xl" />
                     </figure>
@@ -79,12 +82,12 @@
                         <h3>b=10cm, h=12cm</h3>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- 4th card -->
-                <div class="card w-96 changeColorClass bg-base-100 shadow-xl">
+                <div class="card w-ful changeColorClass bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/rhombus.png" class="rounded-xl" />
                     </figure>
@@ -94,12 +97,12 @@
                         <h3>b=10cm, h=12cm</h3>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
                 <!-- 5th card -->
-                <div class="card w-96 changeColorClass bg-base-100 shadow-xl">
+                <div class="card w-fu; changeColorClass bg-base-100 shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/pentagon.png" class="rounded-xl" />
                     </figure>
@@ -109,12 +112,12 @@
                         <h3>p = 6cm, b = 10cm</h3>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
-                <!-- 6th -->
-                <div class="card w-96 bg-base-100 changeColorClass shadow-xl">
+                <!-- 6th card-->
+                <div class="card w-ful bg-base-100 changeColorClass shadow-xl">
                     <figure class="px-10 pt-10">
                         <img src="images/ellipse.png" class="rounded-xl" />
                     </figure>
@@ -124,16 +127,14 @@
                         <h3>a = 10cm, b = 4cm</h3>
                         <div class="card-actions mt-5">
                             <button
-                                class="bg-sky-500 font-bold hover:bg-sky-600 text-white py-2 px-8 rounded">Calculate</button>
+                                class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-8 rounded">Calculate</button>
                         </div>
                     </div>
                 </div>
                
-
             </div>
-
-            <div>
-
+            <div class="card shadow-xl bg-base-100 w-full md:w-[30%] lg:[30%] mx-auto mt-5">
+                <h1 class="font-bold text-lg underline text-center underline-offset-4">Area Calculation</h1>
             </div>
         </section>
     </main>
