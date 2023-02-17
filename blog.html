@@ -8,7 +8,7 @@
       <link href="https://cdn.jsdelivr.net/npm/daisyui@2.50.1/dist/full.css" rel="stylesheet" type="text/css" />
       <!-- tailwind link here -->
       <script src="https://cdn.tailwindcss.com"></script>
-    <title>Home</title>
+    <title>Blog</title>
 </head>
 <body>
     <!-- header section -->
@@ -25,5 +25,66 @@
             </div>
         </div>
     </header>
+    <!-- main section start -->
+    <main>
+        <section class="mt-10 mx-auto w-full md:w-11/12 lg:w-11/12">
+            <!-- 
+                answer all question here
+             -->
+             <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
+                <h1 class="text-4xl text-center font-semibold">What is DOM?</h1>
+                <p class="text-lg my-6">
+                    The Document Object Model is a programming API for documents. The object model itself closely resembles the structure of the documents it models. It allows a language (JavaScript) to manipulate, structure, and style your website. After the browser reads your HTML document, it creates a representational tree called the Document Object Model and defines how that tree can be accessed.
+                </p>
+                <h1  class="text-4xl text-center font-semibold">what is the purpose of DOM?</h1>
+                <p class="text-lg my-6">
+                    According to the W3C, one of the main reasons for developing the DOM is to maintain a standard programming interface for HTML and XML documents, which is language-independent. Setting and maintaining this standard enables programmers to create or navigate these types of documents and modify their elements predictably, using any type of language or development environment.
+
+                    Having said that, JavaScript language is arguably one of the most popular ways of working with HTML documents using the DOM.
+                </p>
+             </div>
+             <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
+                <h1  class="text-4xl text-center font-semibold">How will you select HTML elements using DOM? </h1>
+                <p class="text-lg my-6">
+                    Various ways of selecting elements from DOM in JavaScript.
+                <br>
+                <br>
+                   1. document.querySelector()
+                    The document.querySelector() method is used to select the first matching element using the CSS selectors.
+                    You have to put a dot . in front of the class name to access it.
+                <br>
+                <br>
+                   2. document.querySelectorAll()
+                    The document.querySelectorAll() method is used to select all elements which have the same CSS selectors.
+                <br>
+                <br>
+                   3. document.getElementsByTagName()
+                    The document.getElementsByTagName() method is used to select elements using the tag names only.
+                <br>
+                <br>
+                   4. document.getElementsByClassName()
+                    The document.getElementsByClassName method is used to select the html elements using the css classnames.
+                <br>
+                <br>
+                   5. document.getElementById()
+                    The document.getElementsById() method is used to select elements using the id names only.
+                </p>
+             </div>
+             <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
+                <h1  class="text-4xl text-center font-semibold">What is event bubble?</h1>
+                <p class="text-lg my-6">
+                    Event bubbling is a way in the HTML DOM API to propagate an event when the event is on an element inside another element and both elements have registered a handle to that event. The process of starting with the element that triggered the event and working its way up to the elements contained in the hierarchy. In event bubbling, events are first captured and processed on the innermost element and then propagated to the outer element.
+                </p>
+             </div>
+             <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
+                <h1  class="text-4xl text-center font-semibold">What is a callback function and why will you use it?</h1>
+                <p class="text-lg my-6">What is a callback function and why will you use it?
+                    <br>
+                    JavaScript executes code sequentially from top to bottom. However, in some cases, code runs (or should run) after other things happen, and not sequentially. This is called asynchronous programming.
+                    The callback ensures that the function is executed immediately after the operation completes, rather than before the operation completes. This allows you to develop asynchronous JavaScript code and keep it safe from issues and bugs.
+                </p>
+             </div>
+        </section>
+    </main>
 </body>
 </html>
