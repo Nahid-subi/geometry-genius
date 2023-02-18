@@ -9,7 +9,13 @@ document.getElementById('triangle-btn').addEventListener('click',function(){
         alert("Please Provide Valid Number");
         return;
     }
-    displayData(area.toFixed(2),triangleName);
+    if(Number.isInteger(area) === true){
+        displayData(area, triangleName);
+        }
+        else{
+        const pointArea = area.toFixed(2);
+        displayData(pointArea, triangleName);
+        }
 })
 // it calculate rectangle value in click
 
@@ -22,7 +28,13 @@ document.getElementById('rectangle-btn').addEventListener('click',function(){
         alert("Please Provide Valid Number");
         return;
     }
-    displayData(area.toFixed(2),rectangleName)
+    if(Number.isInteger(area) === true){
+        displayData(area, rectangleName);
+        }
+        else{
+        const pointArea = area.toFixed(2);
+        displayData(pointArea, rectangleName);
+        }
 })
 // it calculate parallelogram value in click
 
