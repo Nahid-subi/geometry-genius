@@ -21,3 +21,10 @@ function randomColor() {
   }
   return color;
 }
+
+
+
+  // click btn and go to blog page
+  document.getElementById('blog-btn').addEventListener('click',function(){
+    window.location.href = 'blog.html';
+});

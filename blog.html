@@ -19,7 +19,7 @@
                 <h3 class="font-semibold text-2xl text-slate-500">Geometry Genius</h3>
             </div>
             <div class="flex-none">
-                <button class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-4 rounded">
+                <button id="returnHome-btn" class="bg-sky-500 font-bold hover:bg-sky-700 text-white py-2 px-4 rounded">
                     Return To Home
                 </button>
             </div>
@@ -31,6 +31,7 @@
             <!-- 
                 answer all question here
              -->
+             <!-- 1st question and answer -->
              <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
                 <h1 class="text-4xl text-center font-semibold">What is DOM?</h1>
                 <p class="text-lg my-6">
@@ -43,6 +44,7 @@
                     Having said that, JavaScript language is arguably one of the most popular ways of working with HTML documents using the DOM.
                 </p>
              </div>
+             <!-- 2nd question and answer -->
              <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
                 <h1  class="text-4xl text-center font-semibold">How will you select HTML elements using DOM? </h1>
                 <p class="text-lg my-6">
@@ -70,12 +72,14 @@
                     The document.getElementsById() method is used to select elements using the id names only.
                 </p>
              </div>
+             <!-- 3rd question and answer -->
              <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
                 <h1  class="text-4xl text-center font-semibold">What is event bubble?</h1>
                 <p class="text-lg my-6">
                     Event bubbling is a way in the HTML DOM API to propagate an event when the event is on an element inside another element and both elements have registered a handle to that event. The process of starting with the element that triggered the event and working its way up to the elements contained in the hierarchy. In event bubbling, events are first captured and processed on the innermost element and then propagated to the outer element.
                 </p>
              </div>
+             <!-- 4th question and answer -->
              <div class="shadow-xl bg-base-100 rounded my-6 p-6 lg:p-12">
                 <h1  class="text-4xl text-center font-semibold">What is a callback function and why will you use it?</h1>
                 <p class="text-lg my-6">What is a callback function and why will you use it?
@@ -86,5 +90,12 @@
              </div>
         </section>
     </main>
+    <script>
+        // click btn and come back to home page
+    document.getElementById('returnHome-btn').addEventListener('click',function(){
+        window.location.href = 'index.html';
+    });
+    </script>
+
 </body>
 </html>
