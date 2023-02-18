@@ -93,8 +93,8 @@ function displayData(area,AngleName){
     const container = document.getElementById("table-container");
     const tr = document.createElement("tr");
     tr.innerHTML=`
-    <td>${count}.${AngleName}</td>
-    <td>${area}<span>cm<sup>2</sup></span> </td>
+    <td class="text-xs">${count}.${AngleName}</td>
+    <td class="text-xs">${area}<span>cm<sup>2</sup></span> </td>
     <td><button
     id="triangle-btn"
     class="bg-sky-500 font-semibold text-xs hover:bg-sky-700 text-white py-2 px-1 rounded">Covert to m<sup>2</sup></button></td>
